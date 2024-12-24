@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Engagement and Workshop Feedback</h1>
+        <div class="filters">
+            <label for="workshop-type">Workshop Type:</label>
+            <select id="workshop-type">
+                <option value="all">All Workshops</option>
+                <option value="coding">Coding Bootcamp</option>
+                <option value="design">Design Thinking</option>
+            </select>
+            <label for="start-date">Date Range:</label>
+            <input type="date" id="start-date">
+            <span>to</span>
+            <input type="date" id="end-date">
+        </div>
+        <canvas id="attendanceChart"></canvas>
+        <canvas id="feedbackChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
